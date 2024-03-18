@@ -1,0 +1,124 @@
+body {
+  font-family: system-ui;
+  background-color: var(--clr-neutral-900);
+  color: var(--clr-neutral-200);
+  padding: 1.25rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.list-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.list {
+  background-color: rgb(167, 196, 209);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(135, 225, 225, 0.15);
+  width: 43%;
+  margin-bottom: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.list-header {
+  margin-bottom: 15px;
+}
+
+.list-title {
+  font-weight: bold;
+  color: #333;
+  font-size: 3rem;
+}
+
+.list-details {
+  font-weight: bold;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.list-dates {
+  font-weight: bold;
+  color: #0d0285;
+  font-size: 1.5rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.button {
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #e0e0e0;
+}
+
+.create {
+  font-size: 3rem;
+  cursor: pointer;
+  border-radius: 50px;
+  color: #fff;
+  background-image: linear-gradient(
+    to right,
+    #4a6cc8,
+    #10b6d3,
+    #55c5d4,
+    #62c796
+  );
+  box-shadow: 0 4px 15px 0 rgba(49, 142, 196, 0.75);
+}
+
+.create:hover {
+  background-color: var(--clr-neutral-100);
+}
+
+/* Responsive styling */
+
+@media (max-width: 1800px) {
+  .list {
+    flex-basis: calc(25% - 20px); /* 4 cards in a row */
+  }
+}
+
+@media (max-width: 1500px) {
+  .list {
+    flex-basis: calc(33.3333% - 20px); /* 3 cards in a row */
+  }
+}
+
+@media (max-width: 1100px) {
+  .list {
+    flex-basis: calc(50% - 20px); /* 2 cards in a row */
+  }
+}
+
+@media (max-width: 700px) {
+  .list {
+    flex-basis: 100%; /* 1 card per row */
+  }
+}

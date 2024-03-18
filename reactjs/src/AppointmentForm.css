@@ -1,0 +1,142 @@
+/* AppointmentForm.css */
+
+.form {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: rgb(67, 60, 193);
+  background: linear-gradient(
+    90deg,
+    rgba(67, 60, 193, 1) 0%,
+    rgba(116, 111, 211, 1) 0%,
+    rgba(74, 150, 147, 1) 100%,
+    rgba(189, 14, 246, 1) 100%
+  );
+}
+
+.form {
+  text-align: center;
+  margin-top: 10vh;
+}
+
+.form-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input,
+select,
+button {
+  border-radius: 3px;
+  width: 80%;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 2rem;
+  border-style: none;
+  font-family: "Poppins", sans-serif;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+input[type="text"],
+input[type="datetime-local"] {
+  margin-bottom: 10px;
+  margin-left: 10px;
+  width: 500px;
+}
+
+select {
+  width: 500px;
+}
+
+label {
+  text-transform: uppercase;
+  font-size: 4rem; /* Adjusted font-size */
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+@media (max-width: 460px) {
+  label {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+input:focus,
+select:focus {
+  border-color: #08f;
+  outline: none;
+  box-shadow: 1px 1px 0px #00f;
+}
+
+.success-message {
+  font-size: 30px; /* Increase font size */
+  text-align: center; /* Center the success message */
+  margin-top: 20px; /* Adjust margin top as needed */
+}
+
+.saveBtn {
+  width: 400px;
+  border: none;
+  border-radius: 50px;
+  margin: 10%;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  background-color: #490ec1;
+  background-size: 300% 100%;
+  color: #fff;
+  background-image: linear-gradient(
+    to right,
+    #eb3941,
+    #f15e64,
+    #e14e53,
+    #e2373f
+  );
+  box-shadow: 0 5px 15px 0 rgba(242, 97, 103, 0.4);
+  position: relative;
+  top: 9px; /* Adjust top position as needed */
+  left: 10px; /* Adjust left position as needed */
+  margin-top: 5px;
+}
+
+.backBtn {
+  width: 400px;
+  border: none;
+  border-radius: 50px;
+  margin: 10%;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  background-color: #490ec1;
+  background-size: 300% 100%;
+  color: #fff;
+  background-image: linear-gradient(
+    to right,
+    #25aae1,
+    #40e495,
+    #30dd8a,
+    #2bb673
+  );
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+  position: relative;
+  top: 9px; /* Adjust top position as needed */
+  left: 10px; /* Adjust left position as needed */
+  margin-top: 5px;
+}

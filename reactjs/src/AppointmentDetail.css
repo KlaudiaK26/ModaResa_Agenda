@@ -1,0 +1,108 @@
+.list-formDetail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust height as needed */
+}
+
+.list-detail {
+  width: 50%; /* Adjust width as needed */
+  background-color: #f0f0f0; /* Background color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+  font-size: 2rem;
+  display: flex;
+  margin-right: auto;
+  align-self: flex-start; /* Align to the top */
+}
+
+.list-headerDetail {
+  margin-bottom: 20px;
+}
+
+.list-headerDetail h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.list-headerDetail p {
+  margin-bottom: 5px;
+}
+
+.update {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+}
+
+.update label {
+  margin-bottom: 10px;
+}
+
+.update input {
+  border-radius: 10px; /* Match border radius of .list-detail */
+  width: 500px; /* Adjust width as needed */
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 2rem;
+  border-style: none;
+  font-family: "Poppins", sans-serif;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.update input,
+.update select {
+  width: 800px; /* Make inputs and selects full width */
+  margin-top: 10px; /* Add margin between fields */
+  flex-direction: column; /* Change flex direction to column */
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-bottom: 10px; /* Add margin between fields */
+}
+
+.update form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center form elements horizontally */
+  width: 80%; /* Adjust width as needed */
+}
+
+.update :focus,
+.update :focus {
+  border-color: #08f;
+  outline: none;
+  box-shadow: 1px 1px 0px #00f;
+}
+
+.conflict-message {
+  font-size: 30px; /* Increase font size */
+  text-align: left;
+  margin-top: 20px; /* Adjust margin top as needed */
+}
+
+.success-messageDetail {
+  font-size: 30px; /* Increase font size */
+  text-align: left;
+  margin-top: 20px; /* Adjust margin top as needed */
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between; /* Or any other alignment you prefer */
+}
+
+.saveBtn {
+  /* Your button styles */
+  width: 500px; /* Set width specifically for the .saveBtn */
+  padding: 10px 20px; /* Example padding */
+}
+
+.backBtn {
+  /* Your button styles */
+  width: 400px; /* Set width specifically for the .backBtn */
+  padding: 10px 20px; /* Example padding */
+  /* Add any other button styles as needed */
+}
